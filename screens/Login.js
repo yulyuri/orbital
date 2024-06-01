@@ -69,6 +69,7 @@ const Login = () => {
       <Button
         style={styles.login}
         disabled={false}
+        onPress={() => navigation.navigate("LookingFor")}
         mode="contained"
         labelStyle={styles.loginBtn}
       >

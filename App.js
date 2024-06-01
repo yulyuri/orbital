@@ -6,9 +6,14 @@ import Login from "./screens/Login";
 import WhatAreYouLookingFor from "./components/WhatAreYouLookingFor";
 import SignUp from "./screens/SignUp";
 import Splash from "./screens/Splash";
+import LookingFor from "./screens/LookingFor";
 
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { View, Text, Pressable, TouchableOpacity } from "react-native";
+import Friends from "./screens/Friends";
+import NextQuestion from "./screens/NextQuestion";
+import Roommates from "./screens/Roommates";
+import ProjectMate from "./screens/ProjectMate";
 
 const App = () => {
   const [hideSplashScreen, setHideSplashScreen] = React.useState(false);
@@ -39,6 +44,31 @@ const App = () => {
             <Stack.Screen
               name="Login"
               component={Login}
+              options={{ headerShown: false }}
+            />
+            <Stack.Screen
+              name="LookingFor"
+              component={LookingFor}
+              options={{ headerShown: false }}
+            />
+            <Stack.Screen
+              name="Friends"
+              component={Friends}
+              options={{ headerShown: false }}
+            />
+            <Stack.Screen
+              name="Roommates"
+              component={Roommates}
+              options={{ headerShown: false }}
+            />
+            <Stack.Screen
+              name="ProjectMate"
+              component={ProjectMate}
+              options={{ headerShown: false }}
+            />
+            <Stack.Screen
+              name="NextQuestion"
+              component={NextQuestion}
               options={{ headerShown: false }}
             />
             <Stack.Screen
